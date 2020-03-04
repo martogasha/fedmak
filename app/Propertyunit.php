@@ -9,4 +9,7 @@ class Propertyunit extends Model
     public function lease(){
         return $this->belongsTo('App\Lease');
     }
+    public function property(){
+        return $this->belongsTo('App\Property');
+    }
 }

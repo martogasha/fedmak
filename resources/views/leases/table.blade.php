@@ -10,6 +10,8 @@
         </tr>
     </thead>
     <tbody>
+
+    @if(is_null($leases))
     @foreach($leases as $lease)
         <tr>
             <td>{!! $lease->user->name !!} {!! $lease->user->last !!}</td>
@@ -32,5 +34,6 @@
             </td>
         </tr>
     @endforeach
+        @endif
     </tbody>
 </table>
