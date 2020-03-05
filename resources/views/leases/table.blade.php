@@ -11,11 +11,10 @@
     </thead>
     <tbody>
 
-    @if(is_null($leases))
     @foreach($leases as $lease)
         <tr>
             <td>{!! $lease->user->name !!} {!! $lease->user->last !!}</td>
-            <td>{!! $lease->propertyunit->property->name !!}</td>
+            <td>kibe{!! $lease->propertyunit->property->name !!}</td>
             <td>{!! $lease->propertyunit->house !!}</td>
             <td>{!! $lease->propertyunit->housetype !!}</td>
             @if($lease->status=='TERMINATED')
@@ -34,6 +33,5 @@
             </td>
         </tr>
     @endforeach
-        @endif
     </tbody>
 </table>

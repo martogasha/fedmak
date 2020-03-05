@@ -41,8 +41,9 @@ class LeaseController extends AppBaseController
 //        $leases = $this->leaseRepository->all();
         $leases = Lease::orderByDesc('id')->get();
 
-        return view('leases.index')
-            ->with('leases', $leases);
+        return view('leases.index',[
+            'leases'=>$leases
+        ]);
     }
 
     /**

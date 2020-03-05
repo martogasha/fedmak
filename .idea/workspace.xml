@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b3e5d44-5762-4639-af25-86d6f669be8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Propertyunit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Propertyunit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/lease.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/lease.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/leases/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/leases/table.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +34,11 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fedmak@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fedmak@localhost [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fedmak@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="fedmak@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="fedmak: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
@@ -192,7 +196,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mtumba" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -335,7 +339,7 @@
       <workItem from="1572334778862" duration="638000" />
       <workItem from="1572945109234" duration="8606000" />
       <workItem from="1583343894376" duration="76000" />
-      <workItem from="1583344008965" duration="1641000" />
+      <workItem from="1583344008965" duration="3541000" />
     </task>
     <servers />
   </component>
@@ -365,6 +369,14 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583397234892">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="59" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1583397234892" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583386743062">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1583386743062" />
     <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1583344027649">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
