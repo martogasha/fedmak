@@ -12,9 +12,9 @@
 <!-- Propertyunit Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('propertyunit_id', 'House No:') !!}
-    <select class="form-control" name="propertyunit_id">
+    <select class="form-control" name="propertyunit_id" required>
         @foreach($houseNumbers as $houseNumber )
-            <option value='{{$houseNumber->id}}'>{{$houseNumber->house}}</option>
+            <option id="houseNumber" value='{{$houseNumber->id}}'>{{$houseNumber->house}}</option>
         @endforeach
     </select>
 {{--    {!! Form::number('propertyunit_id', null, ['class' => 'form-control']) !!}--}}

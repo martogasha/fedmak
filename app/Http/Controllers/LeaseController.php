@@ -93,8 +93,9 @@ class LeaseController extends AppBaseController
         $findLeases = Lease::where('propertyunit_id',$input['propertyunit_id'])->get();
             foreach ($findLeases as $findLease)
         $propertyUnitBills = Propertyunitservicebill::where('propertyunit_id',$findLease->propertyunit_id)->get();
-            foreach ($propertyUnitBills as $propertyUnitBill)
+            foreach ($propertyUnitBills as $propertyUnitBill){
                 $propertyUnits = Propertyunitservicebill::where('propertyunit_id',$findLease->propertyunit_id)->sum('amount');
+            }
                 //insert bill to bills table
                 $monthlyBill = Bill::create([
                     'amount' =>$propertyUnits,

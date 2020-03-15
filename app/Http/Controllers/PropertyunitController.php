@@ -79,24 +79,37 @@ class PropertyunitController extends AppBaseController
      */
     public function store(CreatePropertyunitRequest $request)
     {
-        $validator = \Illuminate\Support\Facades\Validator::make($request->all(), [
-            'house' => ['required'],
-            'housetype' => ['required'],
+        $checkProperty = Propertyunit::where('house',$request->house)->first();
+        if (!is_null($checkProperty)){
+            if ($request->house ==$checkProperty->house){
+                Flash::error('House Number already taken');
 
-
-        ]);
-        if ($validator->fails()) {
-            return redirect(url('admin/createPUnit/'.$request->property_id))
-                ->withErrors($validator)
-                ->withInput();
+                return redirect(url('admin/pUnits/'.$request->property_id));
+            }
         }
-        $input = $request->all();
 
-        $propertyunit = $this->propertyunitRepository->create($input);
 
-        Flash::success('Propertyunit saved successfully.');
 
-        return redirect(url('admin/pUnits/'.$request->property_id));
+            $validator = \Illuminate\Support\Facades\Validator::make($request->all(), [
+                'house' => ['required'],
+                'housetype' => ['required'],
+
+
+            ]);
+            if ($validator->fails()) {
+                return redirect(url('admin/createPUnit/'.$request->property_id))
+                    ->withErrors($validator)
+                    ->withInput();
+            }
+            $input = $request->all();
+
+            $propertyunit = $this->propertyunitRepository->create($input);
+
+            Flash::success('Propertyunit saved successfully.');
+
+            return redirect(url('admin/pUnits/'.$request->property_id));
+
+
     }
 
     /**
